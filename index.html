@@ -23,7 +23,7 @@
   -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300;400;500;600&family=Silkscreen:wght@400;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -50,6 +50,8 @@
           <h1 class="name" title="Rohan Choudhary">Rohan Choudhary</h1>
 
           <p class="title">Software Engineer | Game Developer</p>
+
+          <p class="player-status"><span class="status-dot"></span>Shipping games at Gamewise</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -328,119 +330,72 @@ class="social-link">
 
 
         <!--
-          - testimonials
+          - github repos
         -->
 
-        <section class="testimonials">
+        <section class="repos">
 
-          <h3 class="h3 testimonials-title">Reputation</h3>
+          <h3 class="h3 repos-title">On GitHub</h3>
 
-          <ul class="testimonials-list has-scrollbar">
+          <ul class="repo-list">
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Ashish Kishu</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>I remember our first conversation and how critical I was, but seeing your growth since then has been impressive. The challenges you've faced have only made you stronger, and your dedication, especially in all activities, is commendable. I'm confident you'll continue to excel and secure a top good career soon. Wishing you all the best in your future endeavors.
-                  </p>
-                </div>
-
-              </div>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/GodotNuts/GodotFirebase/pull/497" target="_blank" rel="noopener">GodotFirebase (PR #497, merged)</a></h4>
+              <p class="repo-lang">GDScript</p>
+              <p class="repo-text">Open source Firebase SDK used by Godot game developers. I added Google Play Games sign-in: a new PlayGamesProvider class and an OAuth 2.0 authorization-code login flow, reviewed and merged by the maintainers.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
-
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-2.png" alt="Jessica miller" width="60" data-testimonials-avatar>
-                </figure>
-
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Khushi Bohra</h4>
-
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>
-                    Our initial meeting remains memorable, marked by the opportunity to assist you in refining your algorithms. It has been a privilege to witness your journey toward becoming the accomplished individual you are today. Your dedication and commitment have consistently extended beyond academics to include extracurricular activities, exemplifying a well-rounded and industrious approach.
-
-I firmly believe that your confidence and determination are key drivers of your future success. Given the exceptional effort you continue to invest, I have no doubt that you will achieve remarkable heights in your endeavors.
-
-Best of luck as you continue to excel and pursue greatness in all that you do.
-                  </p>
-                </div>
-
-              </div>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/sprite_staticbody_builder" target="_blank" rel="noopener">Sprite StaticBody Builder</a></h4>
+              <p class="repo-lang">GDScript, Godot 4 plugin</p>
+              <p class="repo-text">Turns any 2D sprite into a StaticBody2D with pixel-accurate collision in one click. Simplifies the outline with the Ramer-Douglas-Peucker algorithm, splits concave shapes into convex parts so physics doesn't glitch, and adds shadows that stay fixed to world lighting when objects rotate.</p>
             </li>
 
-            <li class="testimonials-item">
-              <div class="content-card" data-testimonials-item>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/asset-dependency-visualizer" target="_blank" rel="noopener">Asset Dependency Visualizer</a></h4>
+              <p class="repo-lang">GDScript, Godot 4 plugin</p>
+              <p class="repo-text">Scans scenes, scripts, shaders and resources and shows what uses what as an interactive graph. Finds circular dependencies with Tarjan's algorithm, duplicate files with SHA-256 hashes, and unused assets, and shows what would break before you delete a file.</p>
+            </li>
 
-                <figure class="testimonials-avatar-box">
-                  <img src="./assets/images/avatar-3.png" alt="Emily evans" width="60" data-testimonials-avatar>
-                </figure>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/localization-package" target="_blank" rel="noopener">Localization Package</a></h4>
+              <p class="repo-lang">C#, Unity</p>
+              <p class="repo-text">A drop-in Unity package that translates UI into 6 languages from one JSON file, switches language at runtime and remembers the choice. Editor tools add localization to every text in a scene in one click and find where any key is used.</p>
+            </li>
 
-                <h4 class="h4 testimonials-item-title" data-testimonials-title>Anuradha Kumari</h4>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/fairtag" target="_blank" rel="noopener">FairTag</a></h4>
+              <p class="repo-lang">Solidity, React</p>
+              <p class="repo-text">Replaces RFID FASTags with NFT-based FASTags. Toll plazas call Polygon smart contracts to verify the vehicle and deduct the toll, so every payment is tamper-proof and on-chain.</p>
+            </li>
 
-                <div class="testimonials-text" data-testimonials-text>
-                  <p>When I first met you, I immediately felt that I had found the ideal senior who would guide me throughout my college journey. Our discussions, from placements to the GATE exam, left me thoroughly impressed with your knowledge and insight. Having known you for several years now, I can confidently say that your work ethic is remarkable. Your confidence, communication skills, and the way you approach challenges are qualities I truly admire and aspire to. I am proud of your determination and resilience in overcoming obstacles. Wishing you all the best in your future endeavors.
-                  </p>
-                </div>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/MyShell" target="_blank" rel="noopener">MyShell</a></h4>
+              <p class="repo-lang">Python</p>
+              <p class="repo-text">A Unix-style shell built for the CodeCrafters challenge. Runs built-ins (echo, pwd, cd, type, cat), finds and runs any program on $PATH, and parses quoted arguments correctly.</p>
+            </li>
 
-              </div>
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/Godot" target="_blank" rel="noopener">Godot experiments</a></h4>
+              <p class="repo-lang">GDScript</p>
+              <p class="repo-text">Small gameplay prototypes. Drag Calculation measures the distance, direction and duration of a mouse swipe, the building block for flick and throw controls in mobile games.</p>
+            </li>
+
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/Jarvis" target="_blank" rel="noopener">Jarvis</a></h4>
+              <p class="repo-lang">Python, Tkinter</p>
+              <p class="repo-text">A voice-controlled desktop assistant. Listens for commands to search Wikipedia, play music, send email, take a webcam photo and open apps, and answers out loud.</p>
+            </li>
+
+            <li class="repo-item">
+              <h4 class="h4 repo-title"><a href="https://github.com/rohanchoudhary5210/rohanz" target="_blank" rel="noopener">rohanz</a></h4>
+              <p class="repo-lang">HTML, CSS, JavaScript</p>
+              <p class="repo-text">The source of this site: a single-page portfolio with tabbed sections and filterable projects, hosted on Netlify.</p>
             </li>
 
           </ul>
 
         </section>
-
-
-        <!--
-          - testimonials modal
-        -->
-
-        <div class="modal-container" data-modal-container>
-
-          <div class="overlay" data-overlay></div>
-
-          <section class="testimonials-modal">
-
-            <button class="modal-close-btn" data-modal-close-btn>
-              <ion-icon name="close-outline"></ion-icon>
-            </button>
-
-            <div class="modal-img-wrapper">
-              <figure class="modal-avatar-box">
-                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
-              </figure>
-
-              <img src="./assets/images/icon-quote.svg" alt="quote icon">
-            </div>
-
-            <div class="modal-content">
-
-              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
-
-              <time datetime="2021-06-14">14 June, 2021</time>
-
-              <div data-modal-text>
-                <p>
-                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
-                  lot of experience
-                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
-                  consectetur adipiscing
-                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
-                </p>
-              </div>
-
-            </div>
-
-          </section>
-
-        </div>
 
       </article>
 
@@ -743,6 +698,60 @@ Best of luck as you continue to excel and pursue greatness in all that you do.
           </div>
 
           <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="game dev">
+              <a href="https://github.com/rohanchoudhary5210/sprite_staticbody_builder" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/sprite-staticbody-builder.jpg" alt="Sprite StaticBody Builder Godot plugin" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Sprite StaticBody Builder</h3>
+
+                <p class="project-category">Game Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game dev">
+              <a href="https://github.com/rohanchoudhary5210/asset-dependency-visualizer" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/asset-dependency-visualizer.svg" alt="Asset Dependency Visualizer Godot plugin" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Asset Dependency Visualizer</h3>
+
+                <p class="project-category">Game Dev</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="game dev">
+              <a href="https://github.com/rohanchoudhary5210/localization-package" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/localization-package.svg" alt="Unity localization package" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Localization Package</h3>
+
+                <p class="project-category">Game Dev</p>
+
+              </a>
+            </li>
 
             <li class="project-item  active" data-filter-item data-category="game dev">
               <a href="https://github.com/GodotNuts/GodotFirebase/pull/497" target="_blank">

@@ -2049,3 +2049,9 @@ body { background: var(--night); color: var(--ink); }
 .modal-img-wrapper > img { display: none; }
 .project-img { aspect-ratio: 16 / 10; }
 .project-img img { height: 100%; }
+
+/* Pixel name must fit the sidebar */
+.info-content .name { font-size: 16px; line-height: 1.4; white-space: normal; text-align: center; }
+@media (max-width: 1249px) { .info-content .name { text-align: left; } }
+.mapbox, .mapbox iframe { border-radius: 0; }
+.mapbox { border: 3px solid var(--edge); }

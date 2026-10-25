@@ -2039,19 +2039,13 @@ body { background: var(--night); color: var(--ink); }
 
 :focus-visible { outline: 3px solid var(--coin); outline-offset: 2px; }
 
-/* GitHub repos (replaces Reputation) */
-.repos { margin-bottom: 15px; }
-.repos-title { margin-bottom: 20px; }
-.repo-list { display: grid; gap: 18px; }
-.repo-item {
-  background: var(--panel-2);
-  border: 3px solid var(--edge);
-  padding: 18px 20px;
-}
-.repo-title a { color: var(--ink); }
-.repo-title a:hover, .repo-title a:focus-visible { color: var(--coin); }
-.repo-lang { color: var(--mana); font-size: var(--fs-7); margin: 4px 0 8px; }
-.repo-text { color: var(--ink-soft); font-size: var(--fs-6); line-height: 1.6; max-width: 70ch; }
-@media (min-width: 1024px) { .repo-list { grid-template-columns: 1fr 1fr; } }
+/* GitHub repo cards (reuse the Reputation card layout) */
+.testimonials-avatar-box, .modal-avatar-box, .testimonials-avatar-box img, .modal-avatar-box img { border-radius: 0; }
+.testimonials-item .content-card { cursor: pointer; }
+.testimonials-text .repo-meta { display: none; }
+[data-modal-text] p + p { margin-top: 10px; }
+.repo-meta { color: var(--mana); }
+.repo-meta a { display: inline; color: var(--coin); text-decoration: underline; }
+.modal-img-wrapper > img { display: none; }
 .project-img { aspect-ratio: 16 / 10; }
 .project-img img { height: 100%; }
